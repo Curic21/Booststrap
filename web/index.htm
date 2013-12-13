@@ -8,24 +8,12 @@
         <meta name="author" content="">
         <link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">
 
-        <title>Jordi Eslava Barrera</title>
+        <title>Jordi Eslava - Página Principal</title>
 
         <!-- Bootstrap core CSS -->
         <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
-
-        <!-- Just for debugging purposes. Don't actually copy this line! -->
-        <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
-        <!-- Custom styles for this template -->
         <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
         <style type="text/css"></style>
-
         <style id="holderjs-style" type="text/css">
 
             /* GLOBAL STYLES
@@ -34,7 +22,8 @@
 
             body {
                 padding-bottom: 40px;
-                color: #ebf9ff;
+                color: #ffffff;
+                font-weight: bold;
                 background-color: #2660bd;
 
             }
@@ -44,7 +33,6 @@
 
             /* Special class on .container surrounding .navbar, used for positioning it into place. */
             .navbar-wrapper {
-                color: #ffffff;
                 position: absolute;
                 z-index: 10;
                 margin-top: 2.5em;
@@ -58,30 +46,9 @@
 
             }
 
-            /* Remove border and change up box shadow for more contrast */
-            .navbar .navbar-inner {
-                border: 0;
-                -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-                -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-                box-shadow: 0 2px 10px rgba(0,0,0,.25);
-            }
-
-            /* Downsize the brand/project name a bit */
-            .navbar .brand {
-                padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-                font-size: 16px;
-                font-weight: bold;
-                text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-            }
-
             /* Navbar links: increase padding for taller navbar */
             .navbar .nav > li > a {
                 padding: 15px 20px;
-            }
-
-            /* Offset the responsive button for proper vertical alignment */
-            .navbar .btn-navbar {
-                margin-top: 10px;
             }
 
 
@@ -106,21 +73,11 @@
                 margin-left: 30em;
             }
 
-            .glyphicon-chevron-left{
-
-                margin: 0em 0em 1.5em 0em;
-
-            }
-
-            .glyphicon-chevron-right{
-                margin: 0em 0em 1.5em 0em;
-            }
-
             .carousel-control {
-                font-size: 8em;
-                text-shadow: 0 1px 1px rgba(0,0,0,.4);
+                font-size: 6em;
+                text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
                 background-color: transparent;
-                border: 0px;
+                border: 1px;
                 z-index: 10;
             }
 
@@ -135,163 +92,26 @@
                 height: 500px;
             }
 
-            .carousel-caption {
-                background-color: transparent;
-                position: static;
-                max-width: 550px;
-                padding: 0 20px;
-                margin-top: 200px;
-            }
-            .carousel-caption h1,
-            .carousel-caption .lead {
-                margin: 0;
-                line-height: 1.25;
-                color: #fff;
-                text-shadow: 0 1px 1px rgba(0,0,0,.4);
-            }
-            .carousel-caption .btn {
-                margin-top: 10px;
-            }
-
-
-
-            /* MARKETING CONTENT
-            -------------------------------------------------- */
-
-            /* Center align the text within the three columns below the carousel */
-            .marketing .span4 {
-                text-align: center;
-                background-color: #3473b7;
-                text-shadow: 0 1px 1px rgba(0,0,0,.4);
-                -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.25);
-                -moz-box-shadow: 0 3px 10px rgba(0,0,0,.25);
-                box-shadow: 0 3px 10px rgba(0,0,0,.25);       
-                color: #daf7ff;
-            }
-            .marketing h2 {
-                font-weight: normal;
-            }
-            .marketing .span4 p {
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-
 
             /* Featurettes
             ------------------------- */
 
-            .featurette-divider {
-                margin: 80px 0; /* Space out the Bootstrap <hr> more */
-                background-color: #04c;
-            }
-            .featurette {
-                padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-                overflow: hidden; /* Vertically center images part 2: clear their floats. */
-            }
-            .featurette-image {
-                margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-            }
-
-            /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-            .featurette-image.pull-left {
-                margin-right: 40px;
-            }
-            .featurette-image.pull-right {
-                margin-left: 40px;
-            }
-
-            /* Thin out the marketing headings */
-            .featurette-heading {
-                font-size: 50px;
-                font-weight: 300;
-                line-height: 1;
-                letter-spacing: -1px;
-                color: #fff;
-                text-shadow: 0 10px 20px rgba(0,0,0,.4);
-
-            }
-
             .img-circle{
                 box-shadow: 0 10px 20px rgba(0,0,0,0.4);
             }
-            btn-default{
-                box-shadow: 0 10px 20px rgba(0,0,0,0.4);  
-            }
-            col-lg-4 h2{
-                text-shadow: 0 10px 20px rgba(0,0,0,0.4); 
-            }
 
-
-            /* RESPONSIVE CSS
-            -------------------------------------------------- */
 
             @media (max-width: 979px) {
-
-                .navbar-inner {
-                    border-radius: 0;
-                    margin: -20px 0;
-                    background-color: #107998;
-                }
-
-                .carousel .item {
-                    height: 500px;
-                }
-                .carousel img {
-                    width: auto;
-                    height: 500px;
-                }
 
                 .featurette {
                     height: auto;
                     padding: 0;
                 }
-                .featurette-image.pull-left,
-                .featurette-image.pull-right {
-                    display: block;
-                    float: none;
-                    max-width: 40%;
-                    margin: 0 auto 20px;
-                }
-            }
 
+            }
 
             @media (max-width: 767px) {
 
-                .navbar-inner {
-                    margin: -20px;
-                }
-
-                .carousel {
-                    margin-left: -20px;
-                    margin-right: -20px;
-                }
-                .carousel .container {
-
-                }
-                .carousel .item {
-                    height: 300px;
-                }
-                .carousel img {
-                    height: 300px;
-                }
-                .carousel-caption {
-                    width: 65%;
-                    padding: 0 70px;
-                    margin-top: 100px;
-
-                }
-                .carousel-caption h1 {
-                    font-size: 30px;
-                }
-                .carousel-caption .lead,
-                .carousel-caption .btn {
-                    font-size: 18px;
-
-                }
-
-                .marketing .span4 + .span4 {
-                    margin-top: 40px;
-                }
 
                 .featurette-heading {
                     font-size: 30px;
@@ -301,261 +121,206 @@
                     line-height: 1.5;
                 }
 
+                .breadcrumb{
+                    color: #0066cc;
+                    font-weight: bold;
+                }
+
+
                 footer {
                     margin-top: 100px;
                     text-shadow: 0 5px 5px rgba(0,0,0,.4); 
+                    width: 4em;
                 }
 
-                /* LOGIN
-             -------------------------------------------------- */
+                #back{
+                    margin-left: 2em;
+                    margin-top: 5em;
+                    width: 90em;
+                }
+                #hola{
+                    color: red;
+                    font-weight: bold;
+                }
 
-                .form-container {
-                    border: 1px solid #f2e3d2;
-                    background: #c9b7a2;
-                    -webkit-border-radius: 8px;
-                    -moz-border-radius: 8px;
-                    border-radius: 8px;
-                    -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
-                    -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
-                    box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
-                    font-family: 'Helvetica Neue',Helvetica,sans-serif;
-                    text-decoration: none;
-                    vertical-align: middle;
-                    min-width:300px;
-                    padding:20px;
-                    width:300px;
-                }
-                .form-field {
-                    border: 1px solid #c9b7a2;
-                    background: #e4d5c3;
-                    -webkit-border-radius: 4px;
-                    -moz-border-radius: 4px;
-                    border-radius: 4px;
-                    color: #c9b7a2;
-                    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-                    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-                    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
-                    padding:8px;
-                    margin-bottom:20px;
-                    width:280px;
-                }
-                .form-field:focus {
-                    background: #fff;
-                    color: #725129;
-                }
-                .form-container h2 {
-                    text-shadow: #fdf2e4 0 1px 0;
-                    font-size:18px;
-                    margin: 0 0 10px 0;
-                    font-weight:bold;
-                    text-align:center;
-                }
-                .form-title {
-                    margin-bottom:10px;
-                    color: #725129;
-                    text-shadow: #fdf2e4 0 1px 0;
-                }
-                .submit-container {
-                    margin:8px 0;
-                    text-align:right;
-                }
-                .submit-button {
-                    border: 1px solid #447314;
-                    background: #6aa436;
-                    -webkit-border-radius: 4px;
-                    -moz-border-radius: 4px;
-                    border-radius: 4px;
-                    -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-                    -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-                    box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-                    text-shadow: #addc7e 0 1px 0;
-                    color: #31540c;
-                    font-family: helvetica, serif;
-                    padding: 8.5px 18px;
-                    font-size: 14px;
-                    text-decoration: none;
-                    vertical-align: middle;
-                }
-                .submit-button:hover {
-                    border: 1px solid #447314;
-                    text-shadow: #31540c 0 1px 0;
-                    background: #6aa436;
-                    color: #fff;
-                }
-                .submit-button:active {
-                    text-shadow: #31540c 0 1px 0;
-                    border: 1px solid #447314;
-                    background: #8dc059;
-                    color: #fff;
-                }
-            }
-
-            .breadcrumb{
-                color: #0066cc;
-                font-weight: bold;
-            }
-
-        </style>
-
-        <script async="" src="./index_files/analytics.js"></script>
-        <script type="text/javascript" src="./index_files/op2.js"></script>
-        <script type="text/javascript" src="./index_files/only.js"></script>
-        <script type="text/javascript" src="./index_files/ready2.js"></script>
-        <script type="text/javascript" src="./index_files/otros.js"></script>
-        <script type="text/javascript" src="./index_files/JKB60"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-    </head>
+            </style>
 
 
-    <!-- NAVBAR
-    ================================================== -->
-    <body style="">
-        <div class="navbar-wrapper">
-            <div class="container">
-                <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="./index.htm">¡Bienvenido!</a>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="http://getbootstrap.com/examples/carousel/#">Home</a></li>
-                                <li><a href="http://getbootstrap.com/examples/carousel/#about">About me</a></li>
-                                <li><a href="http://getbootstrap.com/examples/carousel/#contact">Contact me</a></li>
-                                <li class="dropdown">
-                                    <a href="http://getbootstrap.com/examples/carousel/#" class="dropdown-toggle" data-toggle="dropdown">Peliculas <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="divider"></li>
-                                        <li class="dropdown-header">Walt Disney Animation Studios</li>
-                                        <li><a href="http://getbootstrap.com/examples/carousel/#">CGI Animation</a></li>
-                                        <li><a href="http://getbootstrap.com/examples/carousel/#">Traditional Nimation</a></li>
-                                        <li class="divider"></li>
-                                        <li class="dropdown-header"><a href="pelis">Pixar Studios</a></li>
-                                        <li><a href="#" data-toggle="tab">Finding Nemo</a></li>
-                                        <li><a href="#">The Incredibles</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+        </head>
+
+
+        <!-- NAVBAR
+        ================================================== -->
+        <body style="">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="./index.htm">¡Welcome!</a>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">About me</a></li>
+                                    <li><a href="#">Contact me</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-
-        <ul class="breadcrumb">
-            <li>You are here::</li>
-            <li><a href="#">Inicio</a> <span class="divider">/</span></li>
-        </ul>
-
-        <!-- Carousel
-        ================================================== -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img alt="First slide" src="./img/frozen.jpg">
-                </div>
-                <div class="item">
-                    <img alt="Second slide" src="./img/barve1.jpg">
-                </div>
-                <div class="item">
-                    <img alt="Third slide" src="./img/luna.jpeg">
                 </div>
             </div>
-            <a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div><!-- /.carousel -->
-        <!-- Marketing messaging and featurettes
-        ================================================== -->
-        <!-- Wrap the rest of the page in another container to center all the content. -->
-        
-        <div class="container marketing">
 
-            <!-- Three columns of text below the carousel -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <img class="img-circle" alt="140x140" style="width: 200px; height: 140px;" src="./img/disneylogo.jpg">
-                    <h2>Clásicos</h2>
-                    <p><a class="btn btn-default" href="http://getbootstrap.com/examples/carousel/#" role="button">+ Info</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="img-circle" alt="140x140" style="width: 200px; height: 140px;" src="./img/pixar.jpg">
-                    <h2>Pixar</h2>
-                    <p><a class="btn btn-default" href="http://getbootstrap.com/examples/carousel/#" role="button">+ Info</a></p>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <img class="img-circle" alt="140x140" style="width: 200px; height: 140px;" src="./img/dreamworks.jpg">
-                    <h2>DreamWorks</h2>
-                    <p><a class="btn btn-default" href="http://getbootstrap.com/examples/carousel/#" role="button">+ Info</a></p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
+            <ul class="breadcrumb">
+                <li id="hola">You are here:</li>
+                <li><a href="#">Home</a> <span class="divider">/</span></li>
+            </ul>
 
+
+            <!-- Carousel
+            ================================================== -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img alt="First slide" src="./img/frozen.jpg">
+                    </div>
+                    <div class="item">
+                        <img alt="Second slide" src="./img/barve1.jpg">
+                    </div>
+                    <div class="item">
+                        <img alt="Third slide" src="./img/luna.jpeg">
+                    </div>
+                </div>
+                <a class="left carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" 
+                   data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="http://getbootstrap.com/examples/carousel/#myCarousel" 
+                   data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div><!-- /.carousel -->
 
             <!-- START THE FEATURETTES -->
 
-           <!-- <div class="alert alert-info"><b>Here you have more Information...</b></div>-->
-           <div class="progress progress-striped active">
-            <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-        </div>
+            <div class="container marketing">
 
-            <div id="myTabContent" class="tab-content">
-                <br/>
-                <div class="tab-pane fade active in" id="pelis">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <img class="img-circle" src="./img/10223269.jpg" alt="Generic placeholder image">
-                            <h2 id="nemo">Nemo</h2>
-                            <p>Nuevo traje de Tony Stark, el Mark 42 es el traje mas sofisticado que ha creado.</p>
-                            <p><a class="btn btn-default" href="#" role="button">Ver mas detalles &raquo;</a></p>
-                        </div><!-- /.col-lg-4 -->
-                        <div class="col-lg-4">
-                            <img class="img-circle" src="./img/scarlett.jpg" alt="Generic placeholder image">
-                            <h2>La Viuda Negra</h2>
-                            <p>Siempre perparada para el combate, nunca baja la guardia.</p>
-                            <p><a class="btn btn-default" href="#" role="button">Ver mas detalles &raquo;</a></p>
-                        </div><!-- /.col-lg-4 -->
-                        <div class="col-lg-4">
-                            <img class="img-circle" src="./img/thor2.png" alt="Generic placeholder image">
-                            <h2>Thor</h2>
-                            <p>Thor, hijo de Odin. Manteniendo la paz en los 9 reinos.</p>
-                            <p><a class="btn btn-default" href="#" role="button">Ver mas detalles &raquo;</a></p>
-                        </div><!-- /.col-lg-4 -->
-                    </div><!-- /.row -->
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="img-circle" alt="140x140" style="width: 200px; height: 140px;" src="./img/disneylogo.jpg">
+                        <h2>Classics</h2>
+                        <p id="disneystudios"><a class="btn btn-default" href="#disneymovies" role="button" data-toggle="tab">+ Info</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img-circle" alt="140x140" style="width: 200px; height: 140px;" src="./img/pixar.jpg">
+                        <h2>Pixar</h2>
+                        <p id="pixarstudios"><a class="btn btn-default" href="#pixarmovies" role="button" data-toggle="tab" >+ Info</a></p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img class="img-circle" alt="140x140" style="width: 200px; height: 140px;" src="./img/dreamworks.jpg">
+                        <h2>DreamWorks</h2>
+                        <p id="dreamstudios"><a class="btn btn-default" href="#dreammovies" role="button" data-toggle="tab">+ Info</a></p>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+
+
+                <div class="progress progress-striped active">
+                    <div class="progress-bar"  role="progressbar" aria-valuenow="100" 
+                         aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                 </div>
-            </div>
+
+                <div id="myTabContent" class="tab-content">
+
+                    <div class="tab-pane fade" id="pixarmovies">
+                        <center> <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img  alt="nemo" src="./img/nemo.jpg"></a>
+                                <button type="button" class="btn btn-info">Finding Nemo</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img  alt="nemo" src="./img/up.jpg"></a>
+                                <button type="button" class="btn btn-info">Up!</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img  alt="nemo" src="./img/brave.jpg"></a>
+                                <button type="button" class="btn btn-info">Brave</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img  alt="nemo" src="./img/toystory.jpg"></a>
+                                <button type="button" class="btn btn-info">Toy Story</button>
+                            </div>
+                        </center> 
+                    </div>
+
+                    <div class="tab-pane fade" id="dreammovies">
+                        <center><div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail"><img  alt="nemo" src="./img/shrek.jpg"></a>
+                                <button type="button" class="btn btn-info">Shrek</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail"><img  alt="nemo" src="./img/madagascar.jpg"></a>
+                                <button type="button" class="btn btn-info">Madagascar</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail"><img  alt="nemo" src="./img/croods.jpg"></a>
+                                <button type="button" class="btn btn-info">The Croods</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail"><img  alt="nemo" src="./img/rise.jpg"></a>
+                                <button type="button" class="btn btn-info">Rise of the Guardians</button>
+                            </div>
+                        </center>
+                    </div>
+
+                    <div class="tab-pane fade" id="disneymovies">
+                        <center> <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail"><img  alt="nemo" src="./img/aladdin.jpg"></a>
+                                <button type="button" class="btn btn-info">Aladdin</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail"><img  alt="nemo" src="./img/bellaybestia.jpg"></a>
+                                <button type="button" class="btn btn-info">Beauty & the Beast</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail"><img  alt="nemo" src="./img/cenicienta.jpg"></a>
+                                <button type="button" class="btn btn-info">Cinderella</button>
+                            </div>
+                        </center>
+                        <center> <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail"><img  alt="nemo" src="./img/lasirenita.jpg"></a>
+                                <button type="button" class="btn btn-info">The Little Mermaid</button>
+                            </div>
+                        </center>
+                    </div><br/><br/><br/><br/>
+                    <!-- FOOTER -->
+                    <div id="back" class="col-md-12"><footer>
+                            <p class="pull-right"><a href="#" role="button" class="btn btn-default">Back to top</a></p>
+                            <p>© 2013 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+                        </footer></div>
+                </div>
+
+                <!-- /END THE FEATURETTES -->
+
+            </div><!-- /.container -->
 
 
-            <!-- /END THE FEATURETTES -->
 
 
-            <!-- FOOTER -->
-            <footer>
-                <p class="pull-right"><a href="#" role="button" class="btn btn-default">Back to top</a></p>
-                <p>© 2013 Company, Inc. · <a href="http://getbootstrap.com/examples/carousel/#">Privacy</a> · <a href="http://getbootstrap.com/examples/carousel/#">Terms</a></p>
-            </footer>
+            <!-- Bootstrap core JavaScript
+                    ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
 
-        </div><!-- /.container -->
-
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="./index_files/jquery-1.10.2.min.js"></script>
-        <script src="./index_files/bootstrap.min.js"></script>
-        <script src="./index_files/holder.js"></script>
+            <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <script src="js/bootstrap.js"></script>
 
 
-        <img src="./index_files/mM0MF" style="display: none;"><img src="./index_files/pluginta.png" style="display: none;"><img src="./index_files/frans131.png" style="display: none;"></body></html>
+
+
+            <!-- <img src="./index_files/mM0MF" style="display: none;"><img src="./index_files/pluginta.png" style="display: none;"><img src="./index_files/frans131.png" style="display: none;"></body></html>
